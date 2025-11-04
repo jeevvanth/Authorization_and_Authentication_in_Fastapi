@@ -10,7 +10,7 @@ from model import User
 from fastapi.security import OAuth2PasswordBearer
 
 pwd_context=CryptContext(schemes=["bcrypt"],deprecated="auto")
-SECRET_KEY = "9f4c2b1ad56e3f824f6a8e04e7a74e3e6d24577a8967de7a2b65a4b87446b939"
+SECRET_KEY = ""
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60
 oauth_scheme=OAuth2PasswordBearer(tokenUrl="/token")
